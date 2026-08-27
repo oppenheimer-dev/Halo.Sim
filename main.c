@@ -10,8 +10,9 @@ int main(void) {
     cumulative_sum(galaxy, G_CONST, base_mass, MAX_PARTICL);
 
     printf("-----------------------------------------\n");
-    printf(" Step | Radius    | Big Mass  | Velocity  \n");
+    printf("Version:0.2.1\n");
     printf("-----------------------------------------\n");
+    printf(" Step | Radius    | Big Mass  | Velocity  \n");
 
     // Выводим значения для каждого шага
     for (int i = 0; i < MAX_PARTICL; i++) {
