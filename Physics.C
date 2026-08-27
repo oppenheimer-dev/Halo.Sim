@@ -19,7 +19,6 @@ void kepler_function(struct GalaxyShell *shell, const float G_const) {
 }
 
 void cumulative_sum(struct GalaxyShell *full_part,const float G_const,const float base_mass,int count){
-    float current_cumulative_mass = 0.0f;
     for(int i = 0;i<count;i++){
         full_part[i].rad = (float)(i + 1) * 1.0f;//Радиус оболочки с шагом
         full_part[i].shell_mass = base_mass / (1.0f + 0.1f * (float)i);//конкретный слой
