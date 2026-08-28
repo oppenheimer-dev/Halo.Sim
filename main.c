@@ -9,19 +9,20 @@ int main(void) {
     float base_mass = 100.0f;
     cumulative_sum(galaxy, G_CONST, base_mass, MAX_PARTICL);
 
-    printf("-----------------------------------------\n");
-    printf("Version:0.2.1\n");
-    printf("-----------------------------------------\n");
-    printf(" Step | Radius    | Big Mass  | Velocity  \n");
+    printf("-------------------------------------------------------\n");
+    printf("Version:0.2.2|By oppenheimer-dev \n");
+    printf("-------------------------------------------------------\n");
+    printf(" Step  | Radius   | Big Mass  |Dark Mass  | Velocity  |\n");
 
     // Выводим значения для каждого шага
     for (int i = 0; i < MAX_PARTICL; i++) {
-        printf(" %3d  | %9.2f | %9.2f | %9.2f \n", 
+        printf(" %3d  | %9.2f | %9.2f | %9.2f | %9.2f | \n", 
                i + 1, 
-               galaxy[i].rad, 
-               galaxy[i].big_mass, 
+               galaxy[i].radius, 
+               galaxy[i].visible_mass, 
+               galaxy[i].dark_mass,
                galaxy[i].velocity);
     }
-    printf("-----------------------------------------\n");
+    printf("-------------------------------------------------------\n");
     return 0;
 }

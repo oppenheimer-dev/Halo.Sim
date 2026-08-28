@@ -9,9 +9,13 @@
 struct GalaxyShell {
     float velocity;
     float mass;
-    float rad;
-    float big_mass;
+    float radius;
+    float visible_mass;
     float shell_mass; 
+    
+    float real_velocity;
+    float total_mass;
+    float dark_mass;
 };
 
 
