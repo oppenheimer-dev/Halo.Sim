@@ -13,7 +13,6 @@ struct GalaxyShell {
     float visible_mass;
     float shell_mass; 
     
-    float real_velocity;
     float total_mass;
     float dark_mass;
 };

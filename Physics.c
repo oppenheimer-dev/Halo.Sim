@@ -6,8 +6,6 @@ float calculate_dark_matter(struct GalaxyShell *full_part,const float G_const){
     if (full_part == NULL) {
         return 0.0f;
     }else{
-        const float real_velocity_var = 0.10f;
-        full_part->real_velocity = real_velocity_var;
         float dark_layer_mass = 15.0f;
 
         full_part->dark_mass = dark_layer_mass * full_part->radius;
